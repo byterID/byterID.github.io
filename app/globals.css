@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* Tokens from reference-design.md */
+@theme {
+  --color-dark-100: #0a0a0a; /* page background */
+  --color-dark-200: #1a1a1a; /* cards, menu */
+  --color-dark-300: #262626; /* card hover */
+  --color-dark-700: #4d4d4d; /* borders */
+
+  --breakpoint-xs: 430px;
+
+  --animate-shimmer: shimmer 2s linear infinite;
+
+  @keyframes shimmer {
+    from {
+      background-position: 0 0;
+    }
+    to {
+      background-position: -200% 0;
+    }
+  }
+}
+
+@theme inline {
+  --font-sans: var(--font-raleway), var(--font-armenian), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Background grid: 32×32 px, white lines at 0.04 */
+@utility bg-grid {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='none' stroke='rgb(255 255 255 / 0.04)'%3E%3Cpath d='M0 .5H31.5V32'/%3E%3C/svg%3E");
+}
+
+/* Shimmer button background: 200% wide gradient moved by animate-shimmer */
+@utility bg-shimmer {
+  background-image: linear-gradient(110deg, #1a1a1a 45%, #262626 55%, #1a1a1a);
+  background-size: 200% 100%;
+}
+
+@layer base {
+  html {
+    color-scheme: dark;
+    scroll-behavior: smooth;
+    /* anchors land below the fixed menu pill */
+    scroll-padding-top: 7rem;
+  }
+
+  body {
+    background-color: var(--color-dark-100);
+    color: var(--color-stone-200);
+    /* Raleway defaults to old-style figures; keep 2026, 500+, SAA-C03 even */
+    font-variant-numeric: lining-nums;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  ::selection {
+    background-color: rgb(59 130 246 / 0.35);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-blue-500);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+/* Reveal items start at opacity 0 + blur (see components/Reveal.tsx).
+   With reduced motion they are visible from the first paint, before JS runs. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  [data-reveal] {
+    opacity: 1 !important;
+    filter: none !important;
+  }
+
+  .animate-shimmer {
+    animation: none !important;
+  }
+}

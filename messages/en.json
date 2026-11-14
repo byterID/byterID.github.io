@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Artemii Gladkov · DevOps & Backend Engineer",
+    "description": "Junior DevOps and backend engineer in Yerevan. CI/CD, monitoring, Ansible, Docker, PHP/Laravel."
+  },
+  "nav": {
+    "home": "Home",
+    "work": "Work",
+    "contact": "Contact"
+  },
+  "hero": {
+    "location": "Based in Yerevan",
+    "titleAccent": "DevOps",
+    "titleJoin": "&",
+    "titleLine2": "Backend Engineer",
+    "about": "Hi, I'm Artemii. I set up CI/CD, monitoring and server automation, and spent two years building PHP backend for a system with 500+ users.",
+    "ctaWork": "See my work",
+    "ctaCv": "Download CV"
+  },
+  "tech": {
+    "title": "Current technologies",
+    "intro": "What I use for infrastructure, deployment and backend work. AWS is what I'm studying now.",
+    "items": {
+      "linux": "Servers and VMs",
+      "bash": "Scripts, ShellCheck",
+      "docker": "Compose stacks",
+      "nginx": "Web server, proxy",
+      "git": "Version control",
+      "githubActions": "CI/CD pipelines",
+      "ansible": "Server provisioning",
+      "prometheus": "Metrics and alerts",
+      "grafana": "Dashboards",
+      "aws": "Learning, SAA-C03 goal",
+      "postgresql": "SQL, query tuning",
+      "phpLaravel": "Backend, 2 years"
+    }
+  },
+  "work": {
+    "title": "Silver Udochki: production infrastructure",
+    "intro": "A Laravel web app running on my own VPS. The project is about everything around the code: how it is built, deployed and monitored.",
+    "allProjects": "All projects",
+    "liveSite": "Live site",
+    "viewInRepo": "View in repo",
+    "cards": {
+      "stack": {
+        "title": "Containerized stack",
+        "text": "Nginx, PHP-FPM, PostgreSQL 17 and Kafka with background workers in one Docker Compose setup."
+      },
+      "cicd": {
+        "title": "CI/CD pipeline",
+        "text": "Every push runs code style checks, static analysis, tests on PostgreSQL, ShellCheck and a secrets scan. Main deploys to the VPS over SSH."
+      },
+      "ansible": {
+        "title": "Server provisioning",
+        "text": "The server is set up with Ansible. TLS comes from Certbot, and the monitoring host is reached over a private Tailscale network."
+      },
+      "monitoring": {
+        "title": "Monitoring & alerts",
+        "text": "Prometheus collects host, container, database and Nginx metrics. Grafana shows the dashboards, and alerts go to Telegram."
+      }
+    }
+  },
+  "freelance": {
+    "title": "Freelance",
+    "text": "I also take small projects for businesses in Yerevan and remotely.",
+    "services": [
+      "Websites and landing pages",
+      "Telegram bots",
+      "Automation and admin panels",
+      "Server setup and deployment"
+    ],
+    "cta": "Discuss in Telegram"
+  },
+  "contact": {
+    "title": "Hiring a junior DevOps or backend engineer? Write to me.",
+    "telegram": "Telegram",
+    "email": "Email"
+  },
+  "footer": {
+    "name": "Artemii Gladkov",
+    "copyright": "© 2026",
+    "navigate": "Navigate",
+    "project": "Project",
+    "socials": "Socials",
+    "repository": "Repository",
+    "liveSite": "Live site"
+  }
+}

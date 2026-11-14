@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "title": "Артемий Гладков · DevOps и Backend-инженер",
+    "description": "Junior DevOps и backend-инженер в Ереване. CI/CD, мониторинг, Ansible, Docker, PHP/Laravel."
+  },
+  "nav": {
+    "home": "Главная",
+    "work": "Работы",
+    "contact": "Контакты"
+  },
+  "hero": {
+    "location": "Ереван, Армения",
+    "titleAccent": "DevOps",
+    "titleJoin": "и",
+    "titleLine2": "Backend-инженер",
+    "about": "Привет, я Артемий. Настраиваю CI/CD, мониторинг и автоматизацию серверов. Два года писал backend на PHP для системы с 500+ пользователями.",
+    "ctaWork": "Мои работы",
+    "ctaCv": "Скачать резюме"
+  },
+  "tech": {
+    "title": "Технологии",
+    "intro": "С чем я работаю в инфраструктуре, деплое и backend. AWS изучаю сейчас.",
+    "items": {
+      "linux": "Серверы и ВМ",
+      "bash": "Скрипты, ShellCheck",
+      "docker": "Стеки на Compose",
+      "nginx": "Веб-сервер, прокси",
+      "git": "Контроль версий",
+      "githubActions": "Пайплайны CI/CD",
+      "ansible": "Настройка серверов",
+      "prometheus": "Метрики и алерты",
+      "grafana": "Дашборды",
+      "aws": "Изучаю, цель SAA-C03",
+      "postgresql": "SQL, оптимизация запросов",
+      "phpLaravel": "Backend, 2 года"
+    }
+  },
+  "work": {
+    "title": "Silver Udochki: продакшен-инфраструктура",
+    "intro": "Веб-приложение на Laravel, которое работает на моём VPS. Проект про всё, что вокруг кода: как он собирается, разворачивается и мониторится.",
+    "allProjects": "Все проекты",
+    "liveSite": "Живой сайт",
+    "viewInRepo": "Смотреть в репозитории",
+    "cards": {
+      "stack": {
+        "title": "Контейнерный стек",
+        "text": "Nginx, PHP-FPM, PostgreSQL 17 и Kafka с фоновыми воркерами в одном Docker Compose."
+      },
+      "cicd": {
+        "title": "CI/CD-пайплайн",
+        "text": "Каждый push проходит проверку стиля, статический анализ, тесты на PostgreSQL, ShellCheck и поиск секретов. Ветка main деплоится на VPS по SSH."
+      },
+      "ansible": {
+        "title": "Настройка сервера",
+        "text": "Сервер настраивается через Ansible. TLS выдаёт Certbot, до сервера мониторинга идёт приватная сеть Tailscale."
+      },
+      "monitoring": {
+        "title": "Мониторинг и алерты",
+        "text": "Prometheus собирает метрики сервера, контейнеров, базы и Nginx. В Grafana дашборды, алерты приходят в Telegram."
+      }
+    }
+  },
+  "freelance": {
+    "title": "Беру заказы",
+    "text": "Беру небольшие проекты для бизнеса в Ереване и удалённо.",
+    "services": [
+      "Сайты и лендинги",
+      "Telegram-боты",
+      "Автоматизация и админ-панели",
+      "Настройка сервера и деплой"
+    ],
+    "cta": "Обсудить в Telegram"
+  },
+  "contact": {
+    "title": "Ищете junior DevOps или backend-инженера? Напишите мне.",
+    "telegram": "Telegram",
+    "email": "Email"
+  },
+  "footer": {
+    "name": "Артемий Гладков",
+    "copyright": "© 2026",
+    "navigate": "Навигация",
+    "project": "Проект",
+    "socials": "Соцсети",
+    "repository": "Репозиторий",
+    "liveSite": "Живой сайт"
+  }
+}
